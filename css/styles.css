@@ -151,14 +151,15 @@ padding-left: 48px;
 }
 label{
     margin: 0 10px -1px;
+    
 }
 }
-@media (min-width : 657px ) and (max-width: 767px){
+@media (min-width : 593px ) and (max-width: 767px){
     .input-buttons{
         top: 70px;
     }
 }
-@media (min-width : 480px ) and (max-width: 656px){
+@media (min-width : 480px ) and (max-width: 592px){
     .input-buttons{
         top: 18px;
     }
