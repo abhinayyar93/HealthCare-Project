@@ -1,0 +1,296 @@
+.container{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.orange{
+    color: orange;
+}
+body{
+    background-color: #f9f9f9;
+}
+
+#title-title{
+    text-align: center;
+}
+/*Hamburger*/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  
+}
+
+/*Header*/
+#header-nav{
+    background-color: #50beaf;
+}
+#nav-list li a{
+    color: whitesmoke;
+}
+.dropdown-menu li a{
+    color: whitesmoke;
+}
+.navbar-header{
+    float: left;
+position: absolute;
+left: 0;
+padding-left: 48px;
+}
+#nav-list{
+    padding-left: 190px;
+    text-align: center;
+}
+.btn-color{
+    background-color: #50beaf;
+}
+.dropdown{
+    margin-top: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: whitesmoke;
+    padding-right: 25px;
+}
+.dropdown-menu{
+    background-color: #50beaf;
+    min-width: 100%;
+}
+
+.Quick-Link{
+    border: 1px solid #e0e0e0;
+    line-height: 2em;
+    padding-left: 13px;
+}
+
+/*Main Content*/
+.Tag-Text{
+    color: gray;
+}
+
+.glype-box{
+    position: absolute;
+    left: 0;
+    border: 1px solid gray;
+    height: 40px;
+    width: 40px;
+    padding: 10px 12px;
+    color: gray;
+}
+.box-outline{
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+}
+.btn-border{
+    background-color: rgba(255,255,255,.15);
+    color :#46b8da;
+    float: right;
+    width: 100%;
+}
+
+/*End of Main Content*/
+
+
+
+
+/*Footer*/
+/*footer{*/
+        /*position: fixed;*/
+    /*width: 100%;*/
+    /*background-color: #50beaf;*/
+    /*bottom: 0px;*/
+    /*height: 50px;*/
+/*}*/
+.footer,
+.push {
+  height: 40px;
+  /*margin-top: 35px;*/
+  background-color: #50beaf;
+}
+.content {
+  min-height: 84%;
+  margin-bottom: 35px;
+}
+
+
+
+
+/*Media Query*/
+
+@media screen and (max-width: 767px){
+    .patient-detail{
+        text-align: center;
+    }
+    .Quick-Link{
+        border: 0;
+    }
+    .display-1{
+        display: none;
+    }
+        #nav-list{
+        padding-left : 0px;
+    }
+    
+}
+@media screen and (max-width: 480px){
+#main-container{
+    padding: 0;
+}
+}
+
+@media (min-width : 786px ) and (max-width: 991px){
+    .navbar-nav>li{
+        font-size: 0.7em;
+    }
+        #nav-list{
+        padding-left : 15px;
+    }
+    .input-buttons{
+        top :68px;
+    }
+    label{
+        padding: 15px 18px;
+    }
+    .container {
+    padding-right: 50px;
+    padding-left: 50px;
+    }
+    #date-title{
+    top: 26px;
+    }
+}
+
+@media (min-width : 992px ) and (max-width: 1199px){
+    #nav-list{
+        padding-left : 80px;
+    }
+    .input-buttons{
+        top :68px;
+    }
+    label{
+        padding: 15px 18px;
+    }
+     #date-title{
+    top: 33px;
+    }
+    .container {
+    padding-right: 75px;
+    padding-left: 75px;
+    }
+}
+
+@media (max-width : 768px){
+   #collapsable-nav{
+       margin-top: 50px; 
+   }
+
+}
+@media (min-width : 1200px){
+.input-buttons{
+        top :68px;
+    }
+    label{
+        padding: 15px 25px;
+    }    
+     #date-title{
+    top: 40px;
+    }
+}
+
+/*Tabs*/
+.Tab{
+      display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+label {
+    display: inline-block;
+    margin: 0 26px -1px;
+    
+    font-weight: 600;
+    text-align: center;
+    color: #0f0f0f;
+    background-color:#ccc; 
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0px;
+}
+input:checked + label {
+  color: #555;
+  background-color: whitesmoke; 
+  border: 1px solid #ddd;
+  /*border-top: 2px solid orange;*/
+  border-bottom: 1px solid #fff;
+}
+#tab1, #tab2{
+    display: none;
+}
+
+
+
+/*End of Tabs*/
+
+/*Buttons*/
+.input-buttons{
+    float: right;
+    position: relative;
+    
+    display: flex;
+}
+.Action-button{
+    margin-left: 10px;
+}
+#colored-btn{
+    border: 1px solid #50beaf;
+    color: #50beaf;
+}
+#dropdown-list {
+    background-color: white; 
+}
+#dropdown-list li a{ 
+    color: #50beaf;
+
+}
+
+/*End Buttons*/
+
+
+/*Table in Tab*/
+#content1, #content2{
+        padding-top: 80px;
+}
+table{
+    color: gray;
+}
+
+thead{
+    color: black;
+}
+.light-weight{
+    font-weight: lighter;
+}
+#checkbox-styling{
+    padding-bottom: 13px;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+    padding-left: 22px;
+}
+
+/*End of Table in Tab*/
+
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+#date-title{
+    margin-top: -50px;
+    position: relative;
+}
