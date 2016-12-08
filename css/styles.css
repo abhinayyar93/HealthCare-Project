@@ -130,15 +130,41 @@ padding-left: 48px;
         #nav-list{
         padding-left : 0px;
     }
+    #date-title{
+    top: 30px;
+    }
+    
     
 }
 @media screen and (max-width: 480px){
 #main-container{
     padding: 0;
 }
+    .input-buttons{
+        top: 18px;
+    }
 }
 
-@media (min-width : 786px ) and (max-width: 991px){
+@media (min-width: 480px) and (max-width : 767px){
+#main-container{
+    padding: 0 20px;
+}
+label{
+    margin: 0 10px -1px;
+}
+}
+@media (min-width : 657px ) and (max-width: 767px){
+    .input-buttons{
+        top: 70px;
+    }
+}
+@media (min-width : 480px ) and (max-width: 656px){
+    .input-buttons{
+        top: 18px;
+    }
+}
+
+@media (min-width : 768px ) and (max-width: 991px){
     .navbar-nav>li{
         font-size: 0.7em;
     }
@@ -150,6 +176,7 @@ padding-left: 48px;
     }
     label{
         padding: 15px 18px;
+        margin: 0 26px -1px;
     }
     .container {
     padding-right: 50px;
@@ -157,6 +184,11 @@ padding-left: 48px;
     }
     #date-title{
     top: 26px;
+    }
+}
+@media (min-width : 320px ) and (max-width: 479px){
+    label{
+        margin: 0 0 -1px;
     }
 }
 
@@ -169,6 +201,7 @@ padding-left: 48px;
     }
     label{
         padding: 15px 18px;
+        margin: 0 26px -1px;
     }
      #date-title{
     top: 33px;
@@ -183,6 +216,13 @@ padding-left: 48px;
    #collapsable-nav{
        margin-top: 50px; 
    }
+    label{
+        padding: 15px 15px;
+        
+    } 
+    #day-title{
+        top: 40px;
+    }   
 
 }
 @media (min-width : 1200px){
@@ -190,11 +230,13 @@ padding-left: 48px;
         top :68px;
     }
     label{
+        margin: 0 26px -1px;
         padding: 15px 25px;
     }    
      #date-title{
     top: 40px;
     }
+
 }
 
 /*Tabs*/
@@ -212,7 +254,7 @@ padding-left: 48px;
 
 label {
     display: inline-block;
-    margin: 0 26px -1px;
+    /*margin: 0 26px -1px;*/
     
     font-weight: 600;
     text-align: center;
