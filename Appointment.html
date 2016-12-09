@@ -92,6 +92,7 @@
   <label class = "Previous-appt" for="tab2">Past Appts</label>
     
     <div class = "input-buttons" >   
+        <!--PopUp Form-->
        <div>  <button id = "colored-btn" class = "btn btn-default btn-lg" data-toggle = "modal" 
        data-target = "#myModal">Make an App</button> 
        
@@ -101,20 +102,6 @@
     
       <!-- Modal content-->
       <div class="modal-content">
-        <!--<div class="modal-header">-->
-          <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-          <!--<h4 class="modal-title">Modal Header</h4>-->
-        <!--</div>-->
-        <!--<div class="modal-body">-->
-          <!--<p>Some text in the modal.</p>-->
-        <!--</div>-->
-        <!--<div class="modal-footer">-->
-          <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-        <!--</div>-->
-      <!--</div>-->
-      
-    <!--</div>-->
-    <!--<div class="container">-->
         <div class="popup-container">
             <div class = "popup-row">
             <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 inp">
@@ -161,6 +148,12 @@
                 <input class = "popup-text" type="text" placeholder="Email">
             </div>
             </div>
+                        <div class="modal-footer">
+                            <div  class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 inp inp1 popup-button">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default btn-color">Submit</button>
+                            </div>
+        </div>
         
             </div>      
                 <!--End of PopUp Container-->
@@ -168,6 +161,7 @@
         </div>
         </div>
       </div>
+      <!--End of PopUp Form-->
       
     </div>
 

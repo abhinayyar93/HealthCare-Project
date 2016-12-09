@@ -194,6 +194,10 @@ label{
     label{
         margin: 0 0 -1px;
     }
+        .popup-button{
+    position: relative;
+    right: 22px;
+}
 }
 
 @media (min-width : 992px ) and (max-width: 1199px){
@@ -217,6 +221,7 @@ label{
     .popup-row{
         height: 50px;
     }
+
 }
 
 @media (max-width : 768px){
@@ -364,7 +369,7 @@ color: #e0e0e0;
 padding-left: 0px;
 }
 .popup-container{
-    padding: 100px 35px 300px 35px;
+    padding: 100px 35px 100px 35px;
 }
 .popup-text{
         width: 100%;
