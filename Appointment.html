@@ -92,7 +92,89 @@
   <label class = "Previous-appt" for="tab2">Past Appts</label>
     
     <div class = "input-buttons" >   
-       <div>  <button id = "colored-btn" class = "btn btn-default btn-lg">Make an App</button> </div>
+       <div>  <button id = "colored-btn" class = "btn btn-default btn-lg" data-toggle = "modal" 
+       data-target = "#myModal">Make an App</button> 
+       
+       <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <!--<div class="modal-header">-->
+          <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+          <!--<h4 class="modal-title">Modal Header</h4>-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+          <!--<p>Some text in the modal.</p>-->
+        <!--</div>-->
+        <!--<div class="modal-footer">-->
+          <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+        <!--</div>-->
+      <!--</div>-->
+      
+    <!--</div>-->
+    <!--<div class="container">-->
+        <div class="popup-container">
+            <div class = "popup-row">
+            <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 inp">
+                <input class = "popup-text" type="text" placeholder="Date">
+            </div>
+                        <!--<div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">-->
+                <div>
+                    <select class="col-lg-6 col-md-6 col-sm-6 col-xs-12 inp" name="" style="height:24px;">
+                        
+                    <option value="Milk">Provider</option>
+                    <option value="Cheese">Old Cheese</option>
+                    <option value="Bread">Hot Bread</option>
+                    </select>
+            </div>
+            </div>
+            <div>
+            <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 inp">
+                <input class = "popup-text" type="text" placeholder="Date">
+            </div>
+            <div class=" yourname">
+                    <select class="col-lg-6 col-md-6 col-sm-6  col-xs-12 inp" name="" style="height:24px;">
+                    <option value="Milk">Location</option>
+                    <option value="Cheese">Old Cheese</option>
+                    <option value="Bread">Hot Bread</option>
+</select>   
+</div> 
+            </div>
+            <div>
+                    <select class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inp" name="" style="height:24px;">
+                        
+                    <option value="Milk">Provider</option>
+                    <option value="Cheese">Old Cheese</option>
+                    <option value="Bread">Hot Bread</option>
+                    </select>
+            </div>
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 inp inp1">
+                <textarea placeholder="Address"></textarea>
+            </div>
+            <div>
+            <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 inp">
+                <input class = "popup-text" type="text" placeholder="Phone">
+            </div>
+            <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 inp inp1">
+                <input class = "popup-text" type="text" placeholder="Email">
+            </div>
+            </div>
+        
+            </div>      
+                <!--End of PopUp Container-->
+
+        </div>
+        </div>
+      </div>
+      
+    </div>
+
+       
+       
+       
+       
                         <div class = "Action-button">
               <button id = "colored-btn" class = "btn btn-default btn-lg dropdown-toggle" data-toggle = "dropdown">
                     Action<span class = "caret"></span>
@@ -102,7 +184,7 @@
                     <li><a href = "#">Cancel</a></li>
                 </ul>
             </div>
-            </div>
+       </div>     
 
     
   <section id="content1" class = " Tab">
