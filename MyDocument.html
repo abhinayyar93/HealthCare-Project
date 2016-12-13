@@ -1,0 +1,288 @@
+<html> 
+    <head>
+        <title>HealthCare</title>
+            <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome2/css/font-awesome.min.css">
+        </head>     
+
+<body>
+<header>
+        <nav id="header-nav" class="navbar navbar-default">
+      <div class="container container1">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav">
+            <li>
+              <a href="Dashboard.html">
+                <span class="fa fa-pie-chart"></span><br class="hidden-xs"> Dashboard</a>
+            </li>
+            <li>
+              <a href="Appointment.html">
+                <span class="fa fa-calendar"></span><br class="hidden-xs"> Appointments</a>
+            </li>
+            <li>
+              <a href="Messages.html">
+                <span class="fa fa-comments-o"></span><br class="hidden-xs"> Messages</a>
+            </li>
+            <li>
+              <a href="MyHealth.html">
+                <span class="fa fa-heart-o"></span><br class="hidden-xs"> My Health</a>
+            </li>
+            <li>
+              <a href="MyProfile.html">
+                <span class="fa fa-user-o"></span><br class="hidden-xs"> My Profile</a>
+            </li>
+            <li>
+              <a href="MyDocument.html">
+                <span class="fa fa-file-text-o"></span><br class="hidden-xs"> My Documents</a>
+            </li>
+            
+          </ul><!-- #nav-list -->
+          </div>
+
+            <div class = "dropdown">
+                <button class = "btn btn-color dropdown-toggle" data-toggle = "dropdown">
+                    Anya <img src="#" alt="img"><span class = "caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href ="#">My Profile</a></li>
+                    <li><a href = "#">My Health</a></li>
+                     <li class = "divider"></li>
+                    <li><a href = "#">logout</a></li>
+                </ul>
+            </div>
+
+          
+        
+      </div>
+        </nav>
+    
+<!--Main Content-->
+<div class="container container1 content">
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Medical</a></li>
+    <li><a data-toggle="tab" href="#menu1">Legal</a></li>
+      </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="table-responsive">
+
+                
+              <table id="mytable" class="table table-bordred table-striped">
+                   
+                   <thead>
+                   
+                   <th><input type="checkbox" id="checkall" /></th>
+                   <th>Appointment Date</th>
+                    <th><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span id="search_concept">Filter by</span> <span class="caret"></span>
+                    </button>
+                    </th>
+                     <th>View PDF</th>
+                   </thead>
+    <tbody>
+    
+    <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td><input type="date"></td>
+    <td>Core Plan</td>
+    <td><i class="icon-file-text" style="color: #e0e0e0;
+    font-size: x-large;"></td>
+    </tr>
+    
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td><input type="date"></td>
+    <td>Clinical Summary</td>
+    <td><i class="icon-file-text" style="color: #e0e0e0;
+    font-size: x-large;"></td>
+    </tr>
+    
+    
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td><input type="date"></td>
+    <td>Invoice</td>
+    <td><i class="icon-file-text" style="color: #e0e0e0;
+    font-size: x-large;"></td>
+    </tr>
+    
+    
+    
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td><input type="date"></td>
+    <td>Lab Test Result</td>
+    <td><i class="icon-file-text" style="color: #e0e0e0;
+    font-size: x-large;"></td>
+    </tr>
+    
+    
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td><input type="date"></td>
+    <td>Patient ED Resource</td>
+    <td><i class="icon-file-text" style="color: #e0e0e0;
+    font-size: x-large;"></i></td>
+    </tr>
+ 
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td><input type="date"></td>
+    <td>Referral</td>
+    <td><i class="icon-file-text" style="color: #e0e0e0;
+    font-size: x-large;"></i></td>
+    </tr>
+    
+   </tbody>
+      
+</table>
+</div>
+      
+    </div>
+    
+    
+    <div id="menu1" class="tab-pane fade">
+    <h3 class="dark-grey">Form</h3>
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Upload Patient Form</h4>
+        </div>
+        <div class="modal-body">
+        
+          <input id="input-1"  class="file" type="file">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">upload</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+      <div class="col-md-6">
+         <h4>Patient Consent Form</h4>
+      <div class="col-sm-6 form-group">
+     
+                <a class="btn btn-primary">Download Form</a>
+              </div>
+              
+              <div class="col-sm-6 form-group">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+              </div>
+      
+          <h4>Financial Responsibility Form</h4>
+      <div class="col-sm-6 form-group">
+                <a class="btn btn-primary">Download Form</a>
+              </div>
+              
+              <div class="col-sm-6 form-group">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+                    
+              </div>
+      
+           <h4>Financial Responsibility Form</h4>
+      <div class="col-sm-6 form-group">
+              <a class="btn btn-primary">Download Form</a>
+              </div>
+              
+              <div class="col-sm-6 form-group">
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+              </div>
+      
+             <h4>Financial Responsibility Form</h4>
+      <div class="col-sm-6 form-group">
+                <a class="btn btn-primary">Download Form</a>
+              </div>
+              
+              <div class="col-sm-6 form-group">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+              </div>
+      
+               <h4>Financial Responsibility Form</h4>
+      <div class="col-sm-6 form-group">
+                <a class="btn btn-primary">Download Form</a>
+              </div>
+              
+              <div class="col-sm-6 form-group">
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+                
+              </div>
+      
+               <h4>Financial Responsibility Form</h4>
+      <div class="col-sm-6 form-group">
+                <a class="btn btn-primary">Download Form</a>
+              </div>
+              
+              <div class="col-sm-6 form-group">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+              </div>
+      
+                      
+        
+        
+      </div>
+    <h3 class="dark-grey">Notices</h3>
+      <div class="col-md-6">
+        <h4>HIPAA PRIVACY NOTICE</h4>
+              <div class="col-sm-12 form-group"> 
+                 <a class="btn btn-primary"><i class="icon-file-text"></i>View PDF</a>
+                              </div>
+              
+              <h4>HIPAA PRIVACY NOTICE</h4>
+              <div class="col-sm-12 form-group">
+                <a class="btn btn-primary"><i class="icon-file-text"></i>View PDF</a>
+              </div>
+              
+              <h4>HIPAA PRIVACY NOTICE</h4>
+              <div class="col-sm-6 form-group">
+                 <a class="btn btn-primary"><i class="icon-file-text"></i>View PDF</a>
+              </div>
+              
+              </div>
+
+      
+    </div>
+      
+      
+      
+      </div>
+</div>
+
+
+<footer class="footer">
+  Footer 
+</footer>
+</header>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/upload.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
