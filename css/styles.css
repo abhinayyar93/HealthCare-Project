@@ -37,10 +37,6 @@ position: absolute;
 left: 0;
 padding-left: 48px;
 }
-#nav-list{
-    padding-left: 190px;
-    text-align: center;
-}
 .btn-color{
     background-color: #50beaf;
 }
@@ -165,6 +161,11 @@ padding-left: 48px;
     .input-buttons{
         top :68px;
     }
+    #nav-list{
+    padding-left: 99.5px;
+    text-align: center;
+}
+
    .Tab-name{
         padding: 15px 18px;
         margin: 0 26px -1px;
@@ -220,6 +221,11 @@ padding-left: 48px;
         padding: 15px 18px;
         margin: 0 26px -1px;
     }
+    #nav-list{
+    padding-left: 188px;
+    text-align: center;
+}
+
      #date-title{
     top: 33px;
     }
@@ -254,6 +260,11 @@ padding-left: 48px;
         padding: 15px 15px;
         
     } 
+    #nav-list{
+    
+    text-align: left;
+}
+
     #day-title{
         top: 40px;
     }   
@@ -295,6 +306,11 @@ padding-left: 48px;
     .popup-row{
     height: 50px;
     }
+    #nav-list{
+    padding-left: 262px;
+    text-align: center;
+}
+
     .btn-arrow{
     height: 34px;
 }
@@ -514,6 +530,13 @@ padding-left: 0px;
 /*=========================================================================================
 ==========================================My Health css================================== */
 
+.panel {
+    margin-bottom: 80px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
 
 .row {
     margin-right: -15px;
@@ -531,12 +554,62 @@ padding-left: 0px;
     border-radius: 4px;
     
 }
-@media (min-width: 992px) {
+
+@media (min-width: 992px) and (max-width: 1199px) {
   .no-gutter.row > div[class*='col-md'] {
     padding-left: 0;
     padding-right: 0;
   }
-  .no-gutter.row > .col-md-12 {
+    .no-gutter.row > .col-lg-12 {
+    width: 99.99999999999999%;
+    *width: 99.93055555555554%;
+  }
+  .no-gutter.row .col-lg-11 {
+    width: 91.66666666666666%;
+    *width: 91.59722222222221%;
+  }
+  .no-gutter.row > .col-lg-10 {
+    width: 83.33333333333331%;
+    *width: 83.26388888888887%;
+  }
+  .no-gutter.row > .col-lg-9 {
+    width: 74.99999999999999%;
+    *width: 74.93055555555554%;
+  }
+  .no-gutter.row > .col-lg-8 {
+    width: 66.66666666666666%;
+    *width: 66.59722222222221%;
+  }
+  .no-gutter.row > .col-lg-7 {
+    width: 58.33333333333333%;
+    *width: 58.263888888888886%;
+  }
+  .no-gutter.row > .col-lg-6 {
+    width: 49.99999999999999%;
+  }
+  .no-gutter.row > .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+  .no-gutter.row > .col-lg-3 {
+    width: 24.999999999999996%;
+    *width: 24.930555555555554%;
+  }
+  .no-gutter.row > .col-lg-2 {
+    width: 16.666666666666664%;
+    *width: 16.59722222222222%;
+  }
+  .no-gutter.row > .col-lg-1 {
+    width: 8.333333333333332%;
+    *width: 8.263888888888888%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .no-gutter.row > div[class*='col-md'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+    .no-gutter.row > .col-md-12 {
     width: 99.99999999999999%;
     *width: 99.93055555555554%;
   }
@@ -578,18 +651,121 @@ padding-left: 0px;
     width: 8.333333333333332%;
     *width: 8.263888888888888%;
   }
+  .col-xs-6{
+    font-size: small;
+  }
 }
+
+@media (min-width: 480px) and (max-width: 766px) {
+  .no-gutter.row> div[class*='col-md'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+    .no-gutter.row > .col-xs-12 {
+    width: 99.99999999999999%;
+    *width: 99.93055555555554%;
+  }
+  .no-gutter.row .col-xs-11 {
+    width: 91.66666666666666%;
+    *width: 91.59722222222221%;
+  }
+  .no-gutter.row > .col-xs-10 {
+    width: 83.33333333333331%;
+    *width: 83.26388888888887%;
+  }
+  .no-gutter.row > .col-xs-9 {
+    width: 74.99999999999999%;
+    *width: 74.93055555555554%;
+  }
+  .no-gutter.row > .col-xs-8 {
+    width: 66.66666666666666%;
+    *width: 66.59722222222221%;
+  }
+  .no-gutter.row > .col-xs-7 {
+    width: 58.33333333333333%;
+    *width: 58.263888888888886%;
+  }
+  .no-gutter.row > .col-xs-6 {
+    width: 49.99999999999999%;
+  }
+  .no-gutter.row > .col-xs-4 {
+    width: 33.33333333333333%;
+  }
+  .no-gutter.row > .col-xs-3 {
+    width: 24.999999999999996%;
+    *width: 24.930555555555554%;
+  }
+  .no-gutter.row > .col-xs-2 {
+    width: 16.666666666666664%;
+    *width: 16.59722222222222%;
+  }
+  .no-gutter.row > .col-xs-1 {
+    width: 8.333333333333332%;
+    *width: 8.263888888888888%;
+  }
+  .col-xs-6{
+    font-size: large;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .no-gutter.row > div[class*='col-md'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+    .no-gutter.row > .col-xs-12 {
+    width: 99.99999999999999%;
+    *width: 99.93055555555554%;
+  }
+  .no-gutter.row .col-xs-11 {
+    width: 91.66666666666666%;
+    *width: 91.59722222222221%;
+  }
+  .no-gutter.row > .col-xs-10 {
+    width: 83.33333333333331%;
+    *width: 83.26388888888887%;
+  }
+  .no-gutter.row > .col-xs-9 {
+    width: 74.99999999999999%;
+    *width: 74.93055555555554%;
+  }
+  .no-gutter.row > .col-xs-8 {
+    width: 66.66666666666666%;
+    *width: 66.59722222222221%;
+  }
+  .no-gutter.row > .col-xs-7 {
+    width: 58.33333333333333%;
+    *width: 58.263888888888886%;
+  }
+  .no-gutter.row > .col-xs-6 {
+    width: 49.99999999999999%;
+  }
+  .no-gutter.row > .col-xs-4 {
+    width: 33.33333333333333%;
+  }
+  .no-gutter.row > .col-xs-3 {
+    width: 24.999999999999996%;
+    *width: 24.930555555555554%;
+  }
+  .no-gutter.row > .col-xs-2 {
+    width: 16.666666666666664%;
+    *width: 16.59722222222222%;
+  }
+  .no-gutter.row > .col-xs-1 {
+    width: 8.333333333333332%;
+    *width: 8.263888888888888%;
+  }
+  .col-xs-6{
+    font-size: x-large;
+  }
+}
+
 
 element {
     margin-bottom: -20px;
 }
 
-/*
-==================================MYPROFILE======================================
-=================================================================================*/
-
-/*
-==================================MyDocument======================================
+/*==================================MyDocument======================================
 =================================================================================*/
 
 .btn-primary {
